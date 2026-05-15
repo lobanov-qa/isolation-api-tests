@@ -107,6 +107,13 @@ services:
     command: "services.gateway.server.grpc"
     container_name: "grpc-gateway"
 
+  # mock-service
+  http-mock:
+    <<: *python-service
+    ports: [ "8003:8003" ]
+    command: "tests.mock.http.server"
+    container_name: "http-mock"
+
   # operations-service
   http-operations:
     <<: *python-service
