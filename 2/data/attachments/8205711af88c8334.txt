@@ -1,0 +1,16 @@
+INFO     OPERATIONS_KAFKA_PRODUCER_TEST_CLIENT:producer.py:30 Kafka message produced operations-service.operation-event.inbox
+INFO     OPERATIONS_KAFKA_PRODUCER_TEST_CLIENT:producer.py:37 Kafka producer flush started
+INFO     OPERATIONS_KAFKA_PRODUCER_TEST_CLIENT:producer.py:39 Kafka producer flush finished
+INFO     OPERATIONS_HTTP_TEST_CLIENT:logger_event_hook.py:11 GET http://127.0.0.1:8002/api/v1/operations?userId=ef8a3ad0-0f77-473c-b6d0-2cb89b3b7025 - Waiting for response
+INFO     OPERATIONS_HTTP_TEST_CLIENT:logger_event_hook.py:17 GET http://127.0.0.1:8002/api/v1/operations?userId=ef8a3ad0-0f77-473c-b6d0-2cb89b3b7025 - Status 200
+INFO     OPERATIONS_ASSERTIONS:operations.py:55 Check get operations response from events
+INFO     BASE_ASSERTIONS:base.py:12 Check that "operations count" equals to 1
+INFO     OPERATIONS_ASSERTIONS:operations.py:20 Check operation from event
+INFO     BASE_ASSERTIONS:base.py:12 Check that "type" equals to PURCHASE
+INFO     BASE_ASSERTIONS:base.py:12 Check that "status" equals to IN_PROGRESS
+INFO     BASE_ASSERTIONS:base.py:12 Check that "amount" equals to 725.22
+INFO     BASE_ASSERTIONS:base.py:12 Check that "user_id" equals to ef8a3ad0-0f77-473c-b6d0-2cb89b3b7025
+INFO     BASE_ASSERTIONS:base.py:12 Check that "card_id" equals to 9f853b25-24ba-4648-9a6e-58e044b243ea
+INFO     BASE_ASSERTIONS:base.py:12 Check that "category" equals to healthcare
+INFO     BASE_ASSERTIONS:base.py:12 Check that "created_at" equals to 2015-08-23 23:04:42.551232
+INFO     BASE_ASSERTIONS:base.py:12 Check that "account_id" equals to ff29d197-24be-4c66-9742-8f7e50724544
